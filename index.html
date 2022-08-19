@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<style>  
+h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color: rgb(238, 236, 119);  
+    color: rgb(14, 12, 12);  
+    }  
+  
+#clear{  
+width: 280px;  
+border: 3px solid rgb(5, 5, 5);  
+    border-radius: 5px;  
+    padding: 20px;  
+    background-color: rgb(240, 85, 85) 
+}  
+  
+.formstyle  
+{  
+width: 300px;  
+height: 460px;  
+margin: auto;  
+border: 5px solid rgb(6, 7, 7);  
+border-radius: 5px;  
+padding: 20px;  
+}  
+  
+  
+  
+input  
+{  
+width: 20px; 
+height:20px; 
+background-color: rgb(198, 241, 198);  
+color: rgb(61, 60, 60);  
+border: 3px solid rgb(15, 14, 14);  
+    border-radius: 5px;  
+    padding: 26px;  
+    margin: 5px;  
+    margin-bottom: 2px;
+    font-size: 22px; 
+    font-weight: 600; 
+}  
+  
+  
+#calc{  
+width: 250px;  
+background-color: beige;
+font-size: x-large;
+font-weight:700;
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  
+</style>  
+  
+</head>  
+<body>  
+<h1>Simple Calculator </h1>  
+<div class= "formstyle">  
+<form name = "form1">  
+      
+    <!-- This input box shows the button pressed by the user in calculator. -->  
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  <!-- Display the calculator button on the screen. -->  
+  <!-- onclick() function display the number prsses by the user. -->  
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+    <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->  
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+  <br>   
+  <!-- Display the Cancel button and erase all data entered by the user. -->  
+  <input type = "button" value = "Clear" onclick = "form1.answer.value = ' ' " id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  
+</body>  
+</html>
